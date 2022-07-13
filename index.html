@@ -1,0 +1,3117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  lang="en"
+  xml:lang="en"
+  style="background: #f3f3f3 !important"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>coding dojo</title>
+    <style>
+      @media only screen {
+        html {
+          min-height: 100%;
+          background: #f3f3f3;
+        }
+      }
+      @media only screen and (max-width: 596px) {
+        .small-float-center {
+          margin: 0 auto !important;
+          float: none !important;
+          text-align: center !important;
+        }
+      }
+      @media only screen and (max-width: 596px) {
+        .hide-for-large {
+          display: block !important;
+          width: auto !important;
+          overflow: visible !important;
+          max-height: none !important;
+          font-size: inherit !important;
+          line-height: inherit !important;
+        }
+      }
+      @media only screen and (max-width: 596px) {
+        table.body table.container .hide-for-large {
+          display: table !important;
+          width: 100% !important;
+        }
+      }
+      @media only screen and (max-width: 596px) {
+        table.body table.container .show-for-large {
+          display: none !important;
+          width: 0;
+          mso-hide: all;
+          overflow: hidden;
+        }
+      }
+      @media only screen and (max-width: 596px) {
+        .menu.small-vertical .menu-item {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+      @media only screen and (max-width: 596px) {
+        table.body img {
+          width: auto;
+          height: auto;
+        }
+        table.body center {
+          min-width: 0 !important;
+        }
+        table.body .container {
+          width: 95% !important;
+        }
+        table.body .columns {
+          height: auto !important;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+        th.small-3 {
+          display: inline-block !important;
+          width: 25% !important;
+        }
+        th.small-4 {
+          display: inline-block !important;
+          width: 33.333333% !important;
+        }
+        th.small-6 {
+          display: inline-block !important;
+          width: 50% !important;
+        }
+        th.small-12 {
+          display: inline-block !important;
+          width: 100% !important;
+        }
+        table.menu {
+          width: 100% !important;
+        }
+        table.menu td,
+        table.menu th {
+          width: auto !important;
+          display: inline-block !important;
+        }
+        table.menu.small-vertical td,
+        table.menu.small-vertical th {
+          display: block !important;
+        }
+        table.menu[align="center"] {
+          width: auto !important;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        h5 {
+          font-size: 18px !important;
+        }
+        .btn {
+          font-size: 18px !important;
+        }
+        .header .logo {
+          float: none !important;
+        }
+        .header .nav {
+          float: none !important;
+        }
+        .hero h2 {
+          font-size: 24px !important;
+        }
+        .hero p {
+          font-size: 16px !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      -moz-box-sizing: border-box;
+      -ms-text-size-adjust: 100%;
+      -webkit-box-sizing: border-box;
+      -webkit-text-size-adjust: 100%;
+      margin: 0;
+      background: #f3f3f3 !important;
+      box-sizing: border-box;
+      color: #0a0a0a;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.3;
+      margin: 0;
+      min-width: 100%;
+      padding: 0;
+      text-align: left;
+      width: 100% !important;
+    "
+  >
+    <span
+      class="preheader"
+      style="
+        color: #f3f3f3;
+        display: none !important;
+        font-size: 1px;
+        line-height: 1px;
+        max-height: 0;
+        max-width: 0;
+        mso-hide: all !important;
+        opacity: 0;
+        overflow: hidden;
+        visibility: hidden;
+      "
+    ></span>
+    <table
+      class="body"
+      style="
+        margin: 0;
+        background: #f3f3f3 !important;
+        border-collapse: collapse;
+        border-spacing: 0;
+        color: #0a0a0a;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        height: 100%;
+        line-height: 1.3;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        vertical-align: top;
+        width: 100%;
+      "
+    >
+      <tr style="padding: 0; text-align: left; vertical-align: top">
+        <td
+          class="center"
+          align="center"
+          valign="top"
+          style="
+            -moz-box-sizing: border-box;
+            -moz-hyphens: auto;
+            -webkit-box-sizing: border-box;
+            -webkit-hyphens: auto;
+            margin: 0;
+            border-collapse: collapse !important;
+            box-sizing: border-box;
+            color: #0a0a0a;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            hyphens: auto;
+            line-height: 1.3;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            vertical-align: top;
+            word-wrap: break-word;
+          "
+        >
+          <center style="width: 100%">
+            <table
+              align="center"
+              class="spacer float-center"
+              style="
+                margin: 0 auto;
+                border-collapse: collapse;
+                border-spacing: 0;
+                float: none;
+                margin: 0 auto;
+                padding: 0;
+                text-align: center;
+                vertical-align: top;
+                width: 100%;
+              "
+            >
+              <tbody>
+                <tr style="padding: 0; text-align: left; vertical-align: top">
+                  <td
+                    height="16"
+                    style="
+                      -moz-box-sizing: border-box;
+                      -moz-hyphens: auto;
+                      -webkit-box-sizing: border-box;
+                      -webkit-hyphens: auto;
+                      margin: 0;
+                      border-collapse: collapse !important;
+                      box-sizing: border-box;
+                      color: #0a0a0a;
+                      font-family: Helvetica, Arial, sans-serif;
+                      font-size: 16px;
+                      font-weight: 400;
+                      hyphens: auto;
+                      line-height: 16px;
+                      margin: 0;
+                      mso-line-height-rule: exactly;
+                      padding: 0;
+                      text-align: left;
+                      vertical-align: top;
+                      word-wrap: break-word;
+                    "
+                  >
+                    &nbsp;
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table
+              align="center"
+              class="container float-center"
+              style="
+                margin: 0 auto;
+                background: #fefefe;
+                border-collapse: collapse;
+                border-spacing: 0;
+                float: none;
+                margin: 0 auto;
+                padding: 0;
+                text-align: center;
+                vertical-align: top;
+                width: 580px;
+              "
+            >
+              <tbody>
+                <tr style="padding: 0; text-align: left; vertical-align: top">
+                  <td
+                    style="
+                      -moz-box-sizing: border-box;
+                      -moz-hyphens: auto;
+                      -webkit-box-sizing: border-box;
+                      -webkit-hyphens: auto;
+                      margin: 0;
+                      border-collapse: collapse !important;
+                      box-sizing: border-box;
+                      color: #0a0a0a;
+                      font-family: Helvetica, Arial, sans-serif;
+                      font-size: 16px;
+                      font-weight: 400;
+                      hyphens: auto;
+                      line-height: 1.3;
+                      margin: 0;
+                      padding: 0;
+                      text-align: left;
+                      vertical-align: top;
+                      word-wrap: break-word;
+                    "
+                  >
+                    <table
+                      class="spacer"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        padding: 0;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <td
+                            height="20"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 20px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 20px;
+                              margin: 0;
+                              mso-line-height-rule: exactly;
+                              padding: 0;
+                              text-align: left;
+                              vertical-align: top;
+                              word-wrap: break-word;
+                            "
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="row header"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-6 columns first"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 8px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 274px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <img
+                                      src="https://i.postimg.cc/yxtnJ45q/coding-dojo-logo.png"
+                                      alt
+                                      class="small-float-center"
+                                      style="
+                                        -ms-interpolation-mode: bicubic;
+                                        clear: both;
+                                        display: block;
+                                        max-width: 100%;
+                                        outline: 0;
+                                        text-decoration: none;
+                                        width: auto;
+                                      "
+                                    />
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                          <th
+                            class="small-12 large-6 columns last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 8px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 274px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <center style="width: 100%">
+                                      <table
+                                        align="center"
+                                        class="menu horizontal small-vertical nav float-center"
+                                        style="
+                                          margin: 0 auto;
+                                          background-color: #fff !important;
+                                          border-collapse: collapse;
+                                          border-spacing: 0;
+                                          float: right !important;
+                                          margin: 0 auto;
+                                          padding: 0;
+                                          text-align: center;
+                                          vertical-align: top;
+                                          width: auto;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr
+                                            style="
+                                              padding: 0;
+                                              text-align: center;
+                                              vertical-align: top;
+                                            "
+                                          >
+                                            <td
+                                              style="
+                                                -moz-box-sizing: border-box;
+                                                -moz-hyphens: auto;
+                                                -webkit-box-sizing: border-box;
+                                                -webkit-hyphens: auto;
+                                                margin: 0;
+                                                border-collapse: collapse !important;
+                                                box-sizing: border-box;
+                                                color: #0a0a0a;
+                                                font-family: Helvetica, Arial,
+                                                  sans-serif;
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                                hyphens: auto;
+                                                line-height: 1.3;
+                                                margin: 0;
+                                                padding: 0;
+                                                text-align: left;
+                                                vertical-align: top;
+                                                word-wrap: break-word;
+                                              "
+                                            >
+                                              <table
+                                                style="
+                                                  border-collapse: collapse;
+                                                  border-spacing: 0;
+                                                  padding: 0;
+                                                  text-align: left;
+                                                  vertical-align: top;
+                                                  width: 100%;
+                                                "
+                                              >
+                                                <tbody>
+                                                  <tr
+                                                    style="
+                                                      padding: 0;
+                                                      text-align: center;
+                                                      vertical-align: top;
+                                                    "
+                                                  >
+                                                    <th
+                                                      class="menu-item float-center"
+                                                      style="
+                                                        -moz-box-sizing: border-box;
+                                                        -moz-hyphens: auto;
+                                                        -webkit-box-sizing: border-box;
+                                                        -webkit-hyphens: auto;
+                                                        margin: 0 auto;
+                                                        border-collapse: collapse !important;
+                                                        box-sizing: border-box;
+                                                        color: #0a0a0a;
+                                                        float: none;
+                                                        font-family: Helvetica,
+                                                          Arial, sans-serif;
+                                                        font-size: 16px;
+                                                        font-weight: 400;
+                                                        hyphens: auto;
+                                                        line-height: 1.3;
+                                                        margin: 0 auto;
+                                                        padding: 0;
+                                                        padding-bottom: 10px;
+                                                        padding-left: 10px;
+                                                        padding-right: 10px;
+                                                        padding-top: 10px;
+                                                        text-align: center;
+                                                        vertical-align: top;
+                                                        word-wrap: break-word;
+                                                      "
+                                                    >
+                                                      <a
+                                                        href="basic.html"
+                                                        target="_blank"
+                                                        style="
+                                                          color: #444 !important;
+                                                          font-family: Helvetica,
+                                                            Arial, sans-serif;
+                                                          font-size: 13px;
+                                                          font-weight: 400;
+                                                          line-height: 1.3;
+                                                          padding: 0;
+                                                          text-align: left;
+                                                          text-decoration: none;
+                                                        "
+                                                      >
+                                                        Contact
+                                                      </a>
+                                                    </th>
+                                                    <th
+                                                      class="menu-item float-center"
+                                                      style="
+                                                        -moz-box-sizing: border-box;
+                                                        -moz-hyphens: auto;
+                                                        -webkit-box-sizing: border-box;
+                                                        -webkit-hyphens: auto;
+                                                        margin: 0 auto;
+                                                        border-collapse: collapse !important;
+                                                        box-sizing: border-box;
+                                                        color: #0a0a0a;
+                                                        float: none;
+                                                        font-family: Helvetica,
+                                                          Arial, sans-serif;
+                                                        font-size: 16px;
+                                                        font-weight: 400;
+                                                        hyphens: auto;
+                                                        line-height: 1.3;
+                                                        margin: 0 auto;
+                                                        padding: 0;
+                                                        padding-bottom: 10px;
+                                                        padding-left: 10px;
+                                                        padding-right: 10px;
+                                                        padding-top: 10px;
+                                                        text-align: center;
+                                                        vertical-align: top;
+                                                        word-wrap: break-word;
+                                                      "
+                                                    >
+                                                      <a
+                                                        href="drip.html"
+                                                        target="_blank"
+                                                        style="
+                                                          color: #444 !important;
+                                                          font-family: Helvetica,
+                                                            Arial, sans-serif;
+                                                          font-size: 13px;
+                                                          font-weight: 400;
+                                                          line-height: 1.3;
+                                                          padding: 0;
+                                                          text-align: left;
+                                                          text-decoration: none;
+                                                        "
+                                                      >
+                                                        Open House
+                                                      </a>
+                                                    </th>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </center>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr
+                      style="
+                        border: transparent;
+                        border-bottom: 1px solid #ddd;
+                        width: 95%;
+                      "
+                    />
+                    <table
+                      class="row hero"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-12 columns first last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 564px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <h2
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 30px;
+                                        font-weight: 700;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: center;
+                                        word-wrap: normal;
+                                      "
+                                    >
+                                      The Amazing Career Results Created By $10+
+                                      Million In Scholarships
+                                    </h2>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 18px;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: center;
+                                      "
+                                    >
+                                      You could be eligible to apply for a
+                                      scholarship! Apply today.
+                                    </p>
+                                    <img
+                                      src="https://s8.gifyu.com/images/coding-dojo-bg.gif"
+                                      alt
+                                      style="
+                                        -ms-interpolation-mode: bicubic;
+                                        clear: both;
+                                        display: block;
+                                        max-width: 100%;
+                                        outline: 0;
+                                        text-decoration: none;
+                                        width: auto;
+                                      "
+                                    />
+                                  </th>
+                                  <th
+                                    class="expander"
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0 !important;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      visibility: hidden;
+                                      width: 0;
+                                      word-wrap: break-word;
+                                    "
+                                  ></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="spacer"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        padding: 0;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <td
+                            height="12"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 12px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 12px;
+                              margin: 0;
+                              mso-line-height-rule: exactly;
+                              padding: 0;
+                              text-align: left;
+                              vertical-align: top;
+                              word-wrap: break-word;
+                            "
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="row"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-12 columns first last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 564px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <center style="width: 100%">
+                                      <a
+                                        href="#"
+                                        class="btn float-center"
+                                        align="center"
+                                        style="
+                                          background: #00a4bd;
+                                          color: #fff !important;
+                                          font-family: Helvetica, Arial,
+                                            sans-serif;
+                                          font-size: 24px;
+                                          font-weight: 400;
+                                          line-height: 1.3;
+                                          padding: 12px 18px;
+                                          text-align: left;
+                                          text-decoration: none;
+                                        "
+                                      >
+                                        Apply For Bootstrap
+                                      </a>
+                                    </center>
+                                    <table
+                                      class="spacer"
+                                      style="
+                                        border-collapse: collapse;
+                                        border-spacing: 0;
+                                        padding: 0;
+                                        text-align: left;
+                                        vertical-align: top;
+                                        width: 100%;
+                                      "
+                                    >
+                                      <tbody>
+                                        <tr
+                                          style="
+                                            padding: 0;
+                                            text-align: left;
+                                            vertical-align: top;
+                                          "
+                                        >
+                                          <td
+                                            height="24"
+                                            style="
+                                              -moz-box-sizing: border-box;
+                                              -moz-hyphens: auto;
+                                              -webkit-box-sizing: border-box;
+                                              -webkit-hyphens: auto;
+                                              margin: 0;
+                                              border-collapse: collapse !important;
+                                              box-sizing: border-box;
+                                              color: #0a0a0a;
+                                              font-family: Helvetica, Arial,
+                                                sans-serif;
+                                              font-size: 24px;
+                                              font-weight: 400;
+                                              hyphens: auto;
+                                              line-height: 24px;
+                                              margin: 0;
+                                              mso-line-height-rule: exactly;
+                                              padding: 0;
+                                              text-align: left;
+                                              vertical-align: top;
+                                              word-wrap: break-word;
+                                            "
+                                          >
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-style: italic;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: center;
+                                      "
+                                    >
+                                      A better career starts with a 2-minute
+                                      application.
+                                    </p>
+                                  </th>
+                                  <th
+                                    class="expander"
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0 !important;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      visibility: hidden;
+                                      width: 0;
+                                      word-wrap: break-word;
+                                    "
+                                  ></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr
+                      style="
+                        border: transparent;
+                        border-bottom: 1px solid #ddd;
+                        width: 95%;
+                      "
+                    />
+                    <table
+                      class="row"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-12 columns first last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 564px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                      "
+                                    >
+                                      At Coding Dojo, we’re proud to offer
+                                      tuition assistance that lowers the
+                                      financial barrier for students who want to
+                                      pursue a career in tech. We’re very proud
+                                      of the results!
+                                    </p>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                      "
+                                    >
+                                      We’ve awarded over
+                                      <span
+                                        class="bold"
+                                        style="font-weight: 700"
+                                      >
+                                        $13 million
+                                      </span>
+                                      in scholarships and tuition assistance to
+                                      help over
+                                      <span
+                                        class="bold"
+                                        style="font-weight: 700"
+                                      >
+                                        8,000
+                                      </span>
+                                      graduates pursue their dream jobs. Our
+                                      training is so successful that our grads
+                                      are so sought after.
+                                      <span
+                                        class="bold"
+                                        style="font-weight: 700"
+                                      >
+                                        83.8%
+                                      </span>
+                                      of Dojo grads are employed in a relevant
+                                      job within 6 months and
+                                      <span
+                                        class="bold"
+                                        style="font-weight: 700"
+                                      >
+                                        91.1%
+                                      </span>
+                                      within 1 year.
+                                    </p>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                      "
+                                    >
+                                      $13 million and counting is money well
+                                      spent with results like these, in our
+                                      opinion!
+                                    </p>
+                                  </th>
+                                  <th
+                                    class="expander"
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0 !important;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      visibility: hidden;
+                                      width: 0;
+                                      word-wrap: break-word;
+                                    "
+                                  ></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr
+                      style="
+                        border: transparent;
+                        border-bottom: 1px solid #ddd;
+                        width: 95%;
+                      "
+                    />
+                    <table
+                      class="spacer"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        padding: 0;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <td
+                            height="12"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 12px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 12px;
+                              margin: 0;
+                              mso-line-height-rule: exactly;
+                              padding: 0;
+                              text-align: left;
+                              vertical-align: top;
+                              word-wrap: break-word;
+                            "
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="row why-choose-coding-dojo"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-12 columns first last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 564px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <h5
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: center;
+                                        word-wrap: normal;
+                                      "
+                                    >
+                                      Why Students Choose Coding Dojo
+                                    </h5>
+                                    <img
+                                      src="https://i.postimg.cc/VsVKZnN7/coding-dojo-stats.png"
+                                      alt
+                                      style="
+                                        -ms-interpolation-mode: bicubic;
+                                        clear: both;
+                                        display: block;
+                                        max-width: 100%;
+                                        outline: 0;
+                                        text-decoration: none;
+                                        width: auto;
+                                      "
+                                    />
+                                  </th>
+                                  <th
+                                    class="expander"
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0 !important;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      visibility: hidden;
+                                      width: 0;
+                                      word-wrap: break-word;
+                                    "
+                                  ></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr
+                      style="
+                        border: transparent;
+                        border-bottom: 1px solid #ddd;
+                        width: 95%;
+                      "
+                    />
+                    <table
+                      class="spacer"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        padding: 0;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <td
+                            height="12"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 12px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 12px;
+                              margin: 0;
+                              mso-line-height-rule: exactly;
+                              padding: 0;
+                              text-align: left;
+                              vertical-align: top;
+                              word-wrap: break-word;
+                            "
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="row scholarships-header"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-12 columns first last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 564px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <h5
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: center;
+                                        word-wrap: normal;
+                                      "
+                                    >
+                                      What scholarships are available?
+                                    </h5>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                      "
+                                    >
+                                      All students are eligible to apply for a
+                                      scholarship if they’re committed to
+                                      working in tech.
+                                    </p>
+                                  </th>
+                                  <th
+                                    class="expander"
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0 !important;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      visibility: hidden;
+                                      width: 0;
+                                      word-wrap: break-word;
+                                    "
+                                  ></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="row scholarships"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-6 columns first"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 8px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 274px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <ul>
+                                      <li style="color: #444">
+                                        Fresh Start Fund
+                                      </li>
+                                      <li style="color: #444">Diversity</li>
+                                      <li style="color: #444">
+                                        Career Re-Invention
+                                      </li>
+                                    </ul>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                          <th
+                            class="small-12 large-6 columns last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 8px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 274px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <ul>
+                                      <li style="color: #444">Women in Tech</li>
+                                      <li style="color: #444">
+                                        Military Re-Training
+                                      </li>
+                                      <li style="color: #444">Early Start</li>
+                                    </ul>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="row"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-12 columns first last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 564px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                      "
+                                    >
+                                      <a
+                                        href="#"
+                                        style="
+                                          margin: default;
+                                          color: #2199e8;
+                                          font-family: Helvetica, Arial,
+                                            sans-serif;
+                                          font-weight: 400;
+                                          line-height: 1.3;
+                                          margin: default;
+                                          padding: 0;
+                                          text-align: left;
+                                          text-decoration: none;
+                                        "
+                                      >
+                                        <span
+                                          class="bold-blue"
+                                          style="
+                                            color: #00a4bd;
+                                            font-weight: 700;
+                                          "
+                                        >
+                                          Explore our scholarships
+                                        </span>
+                                      </a>
+                                      to find which one is right for you.
+                                    </p>
+                                  </th>
+                                  <th
+                                    class="expander"
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0 !important;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      visibility: hidden;
+                                      width: 0;
+                                      word-wrap: break-word;
+                                    "
+                                  ></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr
+                      style="
+                        border: transparent;
+                        border-bottom: 1px solid #ddd;
+                        width: 95%;
+                      "
+                    />
+                    <table
+                      class="spacer"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        padding: 0;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <td
+                            height="12"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 12px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 12px;
+                              margin: 0;
+                              mso-line-height-rule: exactly;
+                              padding: 0;
+                              text-align: left;
+                              vertical-align: top;
+                              word-wrap: break-word;
+                            "
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="row time-to-upgrade"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-12 columns first last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 564px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <h5
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                        word-wrap: normal;
+                                      "
+                                    >
+                                      It's time to upgrade your career.
+                                    </h5>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                      "
+                                    >
+                                      Do you wish your pay matched your
+                                      potential? So did 8,000+ other people who
+                                      upgraded their resumes with us.
+                                    </p>
+                                  </th>
+                                  <th
+                                    class="expander"
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0 !important;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      visibility: hidden;
+                                      width: 0;
+                                      word-wrap: break-word;
+                                    "
+                                  ></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="row"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-12 columns first last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 564px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <center style="width: 100%">
+                                      <a
+                                        href="#"
+                                        class="btn float-center"
+                                        align="center"
+                                        style="
+                                          background: #00a4bd;
+                                          color: #fff !important;
+                                          font-family: Helvetica, Arial,
+                                            sans-serif;
+                                          font-size: 24px;
+                                          font-weight: 400;
+                                          line-height: 1.3;
+                                          padding: 12px 18px;
+                                          text-align: left;
+                                          text-decoration: none;
+                                        "
+                                      >
+                                        Apply For Bootstrap
+                                      </a>
+                                    </center>
+                                    <table
+                                      class="spacer"
+                                      style="
+                                        border-collapse: collapse;
+                                        border-spacing: 0;
+                                        padding: 0;
+                                        text-align: left;
+                                        vertical-align: top;
+                                        width: 100%;
+                                      "
+                                    >
+                                      <tbody>
+                                        <tr
+                                          style="
+                                            padding: 0;
+                                            text-align: left;
+                                            vertical-align: top;
+                                          "
+                                        >
+                                          <td
+                                            height="20"
+                                            style="
+                                              -moz-box-sizing: border-box;
+                                              -moz-hyphens: auto;
+                                              -webkit-box-sizing: border-box;
+                                              -webkit-hyphens: auto;
+                                              margin: 0;
+                                              border-collapse: collapse !important;
+                                              box-sizing: border-box;
+                                              color: #0a0a0a;
+                                              font-family: Helvetica, Arial,
+                                                sans-serif;
+                                              font-size: 20px;
+                                              font-weight: 400;
+                                              hyphens: auto;
+                                              line-height: 20px;
+                                              margin: 0;
+                                              mso-line-height-rule: exactly;
+                                              padding: 0;
+                                              text-align: left;
+                                              vertical-align: top;
+                                              word-wrap: break-word;
+                                            "
+                                          >
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-style: italic;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: center;
+                                      "
+                                    >
+                                      A better career starts with a 2-minute
+                                      application.
+                                    </p>
+                                  </th>
+                                  <th
+                                    class="expander"
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0 !important;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      visibility: hidden;
+                                      width: 0;
+                                      word-wrap: break-word;
+                                    "
+                                  ></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr
+                      style="
+                        border: transparent;
+                        border-bottom: 1px solid #ddd;
+                        width: 95%;
+                      "
+                    />
+                    <table
+                      class="spacer"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        padding: 0;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <td
+                            height="12"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 12px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 12px;
+                              margin: 0;
+                              mso-line-height-rule: exactly;
+                              padding: 0;
+                              text-align: left;
+                              vertical-align: top;
+                              word-wrap: break-word;
+                            "
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="row one-more-thing"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-12 columns first last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 564px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <h5
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                        word-wrap: normal;
+                                      "
+                                    >
+                                      P.S.
+                                      <span style="color: #cc0201">
+                                        One more thing...
+                                      </span>
+                                    </h5>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                      "
+                                    >
+                                      Join our next virtual open house. Not only
+                                      will you get a chance to meet your
+                                      instructors. But during the event, we'll
+                                      give you a special code for $100 off the
+                                      Bootcamp of your choice!
+                                    </p>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                      "
+                                    >
+                                      Go here:
+                                      <span
+                                        class="bold-blue"
+                                        style="color: #00a4bd; font-weight: 700"
+                                      >
+                                        <a
+                                          href="#"
+                                          style="
+                                            margin: default;
+                                            color: #2199e8;
+                                            font-family: Helvetica, Arial,
+                                              sans-serif;
+                                            font-weight: 400;
+                                            line-height: 1.3;
+                                            margin: default;
+                                            padding: 0;
+                                            text-align: left;
+                                            text-decoration: none;
+                                          "
+                                        >
+                                          https://www.codingdojo.com/100dollars
+                                        </a>
+                                      </span>
+                                    </p>
+                                  </th>
+                                  <th
+                                    class="expander"
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0 !important;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      visibility: hidden;
+                                      width: 0;
+                                      word-wrap: break-word;
+                                    "
+                                  ></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr
+                      style="
+                        border: transparent;
+                        border-bottom: 1px solid #ddd;
+                        width: 95%;
+                      "
+                    />
+                    <table
+                      class="spacer"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        padding: 0;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <td
+                            height="12"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 12px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 12px;
+                              margin: 0;
+                              mso-line-height-rule: exactly;
+                              padding: 0;
+                              text-align: left;
+                              vertical-align: top;
+                              word-wrap: break-word;
+                            "
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="row footer"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        display: table;
+                        padding: 0;
+                        position: relative;
+                        text-align: left;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                    >
+                      <tbody>
+                        <tr
+                          style="
+                            padding: 0;
+                            text-align: left;
+                            vertical-align: top;
+                          "
+                        >
+                          <th
+                            class="small-12 large-12 columns first last"
+                            style="
+                              -moz-box-sizing: border-box;
+                              -moz-hyphens: auto;
+                              -webkit-box-sizing: border-box;
+                              -webkit-hyphens: auto;
+                              margin: 0 auto;
+                              border-collapse: collapse !important;
+                              box-sizing: border-box;
+                              color: #0a0a0a;
+                              font-family: Helvetica, Arial, sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              hyphens: auto;
+                              line-height: 1.3;
+                              margin: 0 auto;
+                              padding: 0;
+                              padding-bottom: 16px;
+                              padding-left: 16px;
+                              padding-right: 16px;
+                              text-align: left;
+                              vertical-align: top;
+                              width: 564px;
+                              word-wrap: break-word;
+                            "
+                          >
+                            <table
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                padding: 0;
+                                text-align: left;
+                                vertical-align: top;
+                                width: 100%;
+                              "
+                            >
+                              <tbody>
+                                <tr
+                                  style="
+                                    padding: 0;
+                                    text-align: left;
+                                    vertical-align: top;
+                                  "
+                                >
+                                  <th
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      word-wrap: break-word;
+                                    "
+                                  >
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #444;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: left;
+                                      "
+                                    >
+                                      *Job placement and salary information are
+                                      based on a 2021 student outcomes report.
+                                    </p>
+                                    <table
+                                      class="spacer"
+                                      style="
+                                        border-collapse: collapse;
+                                        border-spacing: 0;
+                                        padding: 0;
+                                        text-align: left;
+                                        vertical-align: top;
+                                        width: 100%;
+                                      "
+                                    >
+                                      <tbody>
+                                        <tr
+                                          style="
+                                            padding: 0;
+                                            text-align: left;
+                                            vertical-align: top;
+                                          "
+                                        >
+                                          <td
+                                            height="30"
+                                            style="
+                                              -moz-box-sizing: border-box;
+                                              -moz-hyphens: auto;
+                                              -webkit-box-sizing: border-box;
+                                              -webkit-hyphens: auto;
+                                              margin: 0;
+                                              border-collapse: collapse !important;
+                                              box-sizing: border-box;
+                                              color: #0a0a0a;
+                                              font-family: Helvetica, Arial,
+                                                sans-serif;
+                                              font-size: 30px;
+                                              font-weight: 400;
+                                              hyphens: auto;
+                                              line-height: 30px;
+                                              margin: 0;
+                                              mso-line-height-rule: exactly;
+                                              padding: 0;
+                                              text-align: left;
+                                              vertical-align: top;
+                                              word-wrap: break-word;
+                                            "
+                                          >
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <p
+                                      style="
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        color: #666;
+                                        font-family: Helvetica, Arial,
+                                          sans-serif;
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        line-height: 1.3;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        padding: 0;
+                                        text-align: center;
+                                      "
+                                    >
+                                      Coding Dojo, 3600 136th Place SE, #300,
+                                      Bellevue, WA 98006
+                                    </p>
+                                    <center style="width: 100%">
+                                      <a
+                                        href="#"
+                                        align="center"
+                                        class="float-center"
+                                        style="
+                                          color: #2199e8;
+                                          font-family: Helvetica, Arial,
+                                            sans-serif;
+                                          font-size: 12px;
+                                          font-weight: 400;
+                                          line-height: 1.3;
+                                          padding: 0;
+                                          text-align: left;
+                                          text-decoration: none;
+                                        "
+                                      >
+                                        Unsubscribe Manage preferences
+                                      </a>
+                                    </center>
+                                  </th>
+                                  <th
+                                    class="expander"
+                                    style="
+                                      -moz-box-sizing: border-box;
+                                      -moz-hyphens: auto;
+                                      -webkit-box-sizing: border-box;
+                                      -webkit-hyphens: auto;
+                                      margin: 0;
+                                      border-collapse: collapse !important;
+                                      box-sizing: border-box;
+                                      color: #0a0a0a;
+                                      font-family: Helvetica, Arial, sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 400;
+                                      hyphens: auto;
+                                      line-height: 1.3;
+                                      margin: 0;
+                                      padding: 0 !important;
+                                      text-align: left;
+                                      vertical-align: top;
+                                      visibility: hidden;
+                                      width: 0;
+                                      word-wrap: break-word;
+                                    "
+                                  ></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <!-- prevent Gmail on iOS font size manipulation -->
+    <div
+      style="
+        display: none;
+        white-space: nowrap;
+        font: 15px courier;
+        line-height: 0;
+      "
+    >
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+  </body>
+</html>
